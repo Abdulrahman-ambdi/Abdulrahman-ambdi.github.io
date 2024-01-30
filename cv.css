@@ -1,0 +1,109 @@
+body {
+    
+    margin: 0;
+    background-color: aqua;
+    padding: 5px;
+
+}
+header {
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+main {
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto max-content;
+    gap: 20px;
+    grid-template-areas: 
+    "box-one box-one box-one box-two box-two box-two"
+    "box-three box-three box-three box-three box-three box-three"
+    "box-five box-five box-five box-six box-six box-six"
+    ;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 10px;
+}
+/* adjust later*/
+
+.box-one {
+    
+    grid-area: box-one;
+    display: flex;
+    flex-direction: column;  
+    padding: 5px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 10px;
+}
+#header-box-one {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 10px;
+}
+.box-two {
+    grid-area: box-two;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 5px;
+    
+}
+.box-three {
+    grid-area: box-three;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.box-five {
+    grid-area: box-five;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 10px;
+}
+#header-box-five{
+    border-radius: 10px;
+    padding: 5px;
+}
+.box-six {
+    grid-area: box-six;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 10px;
+}
+#Header-box-six{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 200;
+    word-wrap:break-word;
+    white-space: normal;
+}
+.list{
+    word-wrap:break-word;
+    white-space: normal;
+}
